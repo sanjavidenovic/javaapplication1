@@ -7,8 +7,6 @@ package javaapplication1;
 
 import java.util.Scanner;
 
-
-
 /**
  *
  * @author sanja
@@ -20,24 +18,26 @@ public class JavaApplication1 {
      */
     public static void main(String[] args) {
 
-        Scanner sanjaSkenerSuperZena = new Scanner(System.in);
+        Scanner skenerka = new Scanner(System.in);
 
-        int first, second, result;
-        System.out.println("Enter first num: ");
-        first = sanjaSkenerSuperZena.nextInt();
+        int prvi, drugi, rezultat;
+        // System.out.println("Enter first num: ");
+        System.out.println("Prvi Broj: ");
+        prvi = skenerka.nextInt();
 
-        System.out.println("Enter second num: ");
-        second = sanjaSkenerSuperZena.nextInt();
+        // System.out.println("Enter second num: ");
+        System.out.println("Drugi broj: ");
+        drugi = skenerka.nextInt();
 
-        result = first + second;
-        System.err.println(result);
+        rezultat = prvi + drugi;
+        System.err.println(rezultat);
 
-        if (result > 0) {
-            System.out.println("Result is positive.");
-        } else if (result < 0) {
-            System.out.println("Result is negative.");
-        } else if (result == 0) {
-            System.out.println("Result is zero.");
+        if (rezultat > 0) {
+            System.out.println("Rezultat je pozitivan.");
+        } else if (rezultat < 0) {
+            System.out.println("Rezultat je negativan.");
+        } else if (rezultat == 0) {
+            System.out.println("Rezultat je nula.");
         }
 
     }
